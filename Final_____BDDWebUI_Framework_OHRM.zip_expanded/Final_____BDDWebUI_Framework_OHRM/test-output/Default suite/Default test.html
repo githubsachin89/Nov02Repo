@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 28 23:54:04 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10397 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.tearDownClass()'><b>tearDownClass</b><br>Test class: Runner.TestRunner$OrangeHrm</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at UtilsLayer.WebdriverUtils.quit(WebdriverUtils.java:58)
+	at BaseLayer.BaseTest.tearDown(BaseTest.java:26)
+	at Steps.OrangeHRMSteps.tearDown(OrangeHRMSteps.java:72)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1450500594", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1450500594'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at UtilsLayer.WebdriverUtils.quit(WebdriverUtils.java:58)
+	at BaseLayer.BaseTest.tearDown(BaseTest.java:26)
+	at Steps.OrangeHRMSteps.tearDown(OrangeHRMSteps.java:72)
+</pre></div></td>
+<td>10</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner$OrangeHrm<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test login funcationmality", "Test OrangeHRM application"</td>
+<td><div><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/bidi/HasBiDi
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at UtilsLayer.DriverManager.setDriver(DriverManager.java:23)
+	at BaseLayer.BaseTest.setUp(BaseTest.java:13)
+	at Steps.OrangeHRMSteps.user_is_on_login_page(OrangeHRMSteps.java:26)
+	at ✽.user is on login page(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:4)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.bidi.HasBiDi
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 22 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1901238627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1901238627'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/bidi/HasBiDi
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at UtilsLayer.DriverManager.setDriver(DriverManager.java:23)
+	at BaseLayer.BaseTest.setUp(BaseTest.java:13)
+	at Steps.OrangeHRMSteps.user_is_on_login_page(OrangeHRMSteps.java:26)
+	at ✽.user is on login page(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:4)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.bidi.HasBiDi
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner$OrangeHrm<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test addEmployee Page", "Test OrangeHRM application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1636291061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636291061'><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner$OrangeHrm<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test addEmployee Page", "Test OrangeHRM application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1574029810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1574029810'><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner$OrangeHrm<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test addEmployee Page", "Test OrangeHRM application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1789110533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789110533'><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+<tr>
+<td title='Runner.TestRunner$OrangeHrm.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner$OrangeHrm<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test addEmployee Page", "Test OrangeHRM application"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace774895395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace774895395'><pre>java.lang.NullPointerException: Cannot invoke &quot;PageLayer.PIMPage.clickOnAddEmp()&quot; because &quot;Steps.OrangeHRMSteps.pim&quot; is null
+	at Steps.OrangeHRMSteps.click_on_add_employee(OrangeHRMSteps.java:46)
+	at ✽.click on addEmployee(file:///D:/MyWork/Final_____BDDWebUI_Framework_OHRM/src/test/java/Features/OrangeHRM.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner$OrangeHrm@55fe41ea</td></tr>
+</table><p>
+</body>
+</html>
